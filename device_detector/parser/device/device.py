@@ -178,6 +178,10 @@ class Device(BaseDeviceParser):
 
         ua_type = self.ua_data.get('device', '')
         if ua_type:
+            # Otherwise fails on Playstation 5
+            # device_detector/tests/device/test_device_detector.py::TestDetectConsole::test_parsing
+            if ua_type == 'console':
+                return 'console'
             if ua_type != 'tv' and self.is_tv():
                 return 'tv'
 
