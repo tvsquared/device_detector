@@ -6,9 +6,6 @@ from ...parser.key_value_pairs import key_value_pairs
 
 class TestKeyValuePairs(unittest.TestCase):
 
-    def test_trailing_key_space_version(self):
-        ua = 'Mozilla/5.0 (Linux; Android 8.0.0; SM-A530W Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/73.0.3683.90 Mobile Safari/537.36 Android SermonAudio.com 1.9.8'
-
     def test_2(self):
         ua = 'YouCam Fun/22261949 (iPhone; iOS 12.0.1; Scale/2.00)'
         self.assertListEqual(

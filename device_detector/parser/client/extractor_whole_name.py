@@ -2,7 +2,6 @@ from . import GenericClientParser
 
 from ...lazy_regex import RegexLazyIgnore
 from ..settings import SKIP_PREFIXES
-from ...settings import DDCache
 
 # -------------------------------------------------------------------
 # Regexes that we use to parse UAs with a similar structure

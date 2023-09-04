@@ -15,7 +15,6 @@ from ...parser import (
     VPNProxy,
     WholeNameExtractor,
 )
-from ...utils import ua_hash
 
 
 class TestBrowser(ParserBaseTest):
